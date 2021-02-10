@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GEP Desarrollos</title>
+	<style>
+		//@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:wght@700&family=Titillium+Web:wght@400;900&display=swap');
+
+		*{
+			box-sizing: border-box;
+			max-width: 1620px;
+
+		}
+
+		body {
+			margin: 0 auto;
+			background-color: #F5EFE1;
+			font-family: 'Chivo', sans-serif;
+ 			font-weight: 300;
+			//font-family: 'Open Sans', sans-serif;
+
+		}
+	
+		.caja{
+			width: 96%;
+		}
+
+		h1 , h2 , h3{
+			//font-size: 3em;
+    		//text-transform: uppercase;
+			font-family: 'Playfair Display', serif;
+  			font-weight: 700;
+ 			font-style: italic;
+		}
+		
+		.tex-cen{
+			text-align: center;
+		}
+
+		.sangria {
+			padding-left: 18vw;
+			line-height: 2em;
+		}
+
+		nav{
+			font-weight: bold;
+		}
+
+		.boton_menu {
+			position: fixed;
+			width: 2em;
+			top: 1em;
+			right: 2em;
+
+		}
+
+		.lista_menu {
+			background-color: #191408;
+			display: none;
+			position: fixed;
+			top: 0;
+			right: 0;
+			//font-size: 2em;
+		}
+
+		nav ul{
+			list-style-type: none;
+
+		}
+		
+		nav li {
+			position: relative;
+			padding-right:  2em;
+			line-height: 1.5em;
+		}
+
+		nav a{
+			text-decoration: none;
+			color: white;
+		}
+
+		h1.animar{
+			animation-duration: 1.5s;
+  			animation-name: slidein;
+		}
+
+		@keyframes slidein {
+			  from {
+			    margin-left:100%;
+			    width:300%;	
+			  }
+
+				  to {
+				   margin-left:0%;
+				   width:100%;
+			 	}}
+
+		header{
+			
+			margin-top: 16em;
+			height: 70vh;
+		}
+
+		.portfolio {
+			background-color: #E0E7F5;
+			width: 80%;
+			border-radius: 8px;
+			padding-top: 1.5em;
+			padding-bottom: 1.5em;
+			max-width: 130rem;
+			
+		}
+
+		.portfolio img {
+			width: 35%;
+			height: 30%;
+			float: left;
+			margin-right: 2em;
+			margin-left: 2em;	
+		}
+		
+		.portfolio  p {
+			padding-right: 2em;
+			text-align: justify;
+		}
+
+		.subrayado {
+			text-decoration: underline;
+		}
+
+		.clear {
+			clear: both;
+		}
+
+		.contacto {
+			margin-top: 5em;
+			display: grid;
+			place-items: center;
+		}
+
+		label {
+			font-family: 'Chivo', sans-serif;
+			}
+
+		input, textarea {
+			margin-bottom: 1.5em;
+		}
+
+		input {
+			height: 36px;
+		}
+
+		textarea {
+			width: 100%;
+			height: 100px;
+		}
+
+		footer {
+			background-color: #191408;
+			color: #F5EFE1;	
+			width: 100%;
+			margin-top: 3em;
+			position: absolute;
+		}
+
+		footer p {
+			padding-left: 2em;
+		}
+
+		@media (min-width: 600px){
+
+			p ,  
+			label{
+				font-size: 1.3em;
+			}
+
+			.sangria {
+			padding-left: 30vw;
+			}
+		}
+
+		@media (min-width: 900px){
+
+			.boton_menu {
+				width: 3em;
+			}
+
+			p ,  
+			label, 
+			button,
+			nav li {
+				font-size: 2em;
+			}
+
+			h1,
+			h2,
+			h3{
+				font-size: 3em;
+			}
+
+			.sangria {
+			padding-left: 30vw;
+			}
+
+			input {
+				width: 380px;
+			}
+		}
+		/*
+		    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Titillium Web', sans-serif;*/
+	</style>
+</head>
+<body>
+	<div class="caja">
+		
+	<nav>
+		<div class="lista_menu tex-cen">
+			
+		<ul id="navegacion">
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#trabajos">Trabajos</a></li>
+			<li><a href="#acerca">Acerca</a></li>
+			<li><a href="#contacto">Contacto</a></li>
+		</div>
+		</ul>
+		<img src="imagenes/menu_3643763.webp" class="boton_menu" alt="menu" id="menu" >
+	</nav>
+	<header>
+	<h1 class="tex-cen animar">¡Bienvenidos/as!</h1>
+	<p class="sangria">Página de Portfolio <br> y de contacto de GEP Desarrollos.</p> 
+	<video src="imagenes/firulete.mp4" autoplay="true" loop="true" width="100%"></video>
+	</header>
+		<a href="" id="trabajos"></a>
+	<div class="portfolio">
+		<h2 class="tex-cen subrayado">Nuestros Trabajos</h2>
+		<a href="">
+		<img srcset="imagenes/portfolioPc-200x136.png 100w, 
+					imagenes/portfolioPc2-400x264.png 200w" sizes="(max-width: 600px) 100px, 200px" alt="web para grupo de rock">
+		</a>
+		<p class="sangria">Nuestros diseños están basados en la tecnología <strong>Html, CSS y Javascript</strong>. Sitios y páginas con un planteamiento original, orientados a brindar <strong>la mejor experiencia de usuario</strong>, <em>pensando siempre en el profesionalismo y la simpleza, que es la base de la buena usabilidad WEB</em>.</p>
+
+		<div class="clear"></div>
+		<a href="https://www.gepwebdesign.com" target="_blanck">
+		<img srcset="imagenes/miWebCel(tamañoChico).png 100w,
+				  imagenes/miWebCel_2(400w).png 200w" sizes="(max-width: 600px) 100px, 200px" alt="Página Gep web DESIGN">
+		
+		</a>
+		<p class="sangria"> Diseños que resaltan el objetivo de tu web, basados en la psicología del color, totalmente responsivos. Se adaptan a cualquier dispositivo, tanto PCs como teléfonos, tablets o smart tvs.</p>
+
+		<div class="clear"></div>
+		<a href="https://gepwepdesign.wordpress.com/" target="_blanck">
+			
+		<img srcset="imagenes/portfolioPc2WordPress-200x136.png 100w, 
+				imagenes/portfolioPc2WordPress2-400x264.png 200w" sizes="(max-width: 600px) 100px, 200px" alt="páginas hechas con wordpress">
+		
+		</a>
+		<p class="sangria"> Por medio de WordPress hacemos Webs autoadministrables,  ideales para los clientes que necesitan actualizar información de manera regular.</p>
+
+		<div class="clear"></div>
+		<a href="https://play.google.com/store/apps/details?id=com.gep.guille.pesoschilenosargentinos&hl=es_EC" target="_blanck">
+			
+		<img srcset="imagenes/appsChico.png 100w ,
+				imagenes/appsChico2-400w.png 200w" sizes="(max-width: 600px) 100px, 200px" alt="Aplicaciones Android">
+		</a>
+		<p class="sangria">Además somos desarrolladores de Apps Android, ideal para tener mayor presencia tecnológica y establececer un contacto más personalizado con tus clientes.</p>
+
+		<div class="clear"></div>
+
+	</div>
+	<div class="contacto">
+		<a href="" id="contacto"></a>
+		<img src="imagenes/Line.png" alt="linea">
+		<h1>Contactanos</h1>
+		<form method="post" action="php/codigo.php" enctype="multipart/form-data" autocomplete="off">
+			<label for="nombre">Nombre:</label><br>
+			<input type="text" id="nombre" name="nombre" required="true"><br>
+			<label for="email">Email:</label><br>
+			<input type="email" name="email" id="email" required="true"><br>
+			<label for="mensaje">Mensaje:</label><br>
+			<textarea name="mensaje" id="mensaje" required="true"></textarea><br>
+			<button>Enviar</button>
+		</form>
+
+	</div>
+
+	<footer>
+		<a href="" id="acerca"></a>
+		<p>By GEP WEB DESIGN</p>
+	</footer>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		document.querySelector(".caja").onwheel = function () {
+			// body... 
+			console.log('está scroleando');
+			$('.lista_menu').fadeOut();
+			$('#menu').fadeIn('100');
+		}
+		var position = $(window).scrollTop(); 
+
+// should start at 0
+
+		$(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if(scroll > position) {
+		        console.log('scrollDown');
+		 		$('.lista_menu').fadeOut('100');
+				$('#menu').fadeIn('100');
+		    } else {
+		        console.log('scrollUp');
+		    	//    $('#navegacion').fadeIn('100');
+		    }
+		    position = scroll;
+		});
+
+		$("#menu").click( function () {
+			/* body... */
+			$('#menu').hide();
+			$('.lista_menu').fadeIn();
+		}
+			);
+		$(".lista_menu").click( function () {
+			/* body... */
+			$('.lista_menu').hide();
+			$('#menu').show();
+		}
+			);
+		
+
+	</script>
+</body>
+</html>
